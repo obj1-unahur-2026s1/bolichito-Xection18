@@ -63,6 +63,9 @@ object muñeco {
 }
 
 object placa {
+  var peso = 2000
+  var color = pardo
+
   method color() {
     return color
   }
@@ -81,5 +84,63 @@ object placa {
 
   method material() {
     return cobre
+  }
+}
+
+object arito {
+  method color() {
+    return celeste
+  }
+
+  method material() {
+    return cobre
+  }
+
+  method peso() {
+    return 180
+  }
+}
+
+object banquito {
+  var color = naranja
+
+  method peso() {
+    return 1700
+  }
+
+  method color() {
+    return color
+  }
+
+  method cambiarDeColor(unColor) {
+    color = unColor
+  }
+
+  method material() {
+    return madera
+  }
+}
+
+object cajita {
+  var objeto = remera
+
+  method color() {
+    return rojo
+  }
+
+  method material() {
+    return cobre 
+  }
+
+  method objetoAdentro() {
+    return objeto
+  }
+
+  method cambiarObjetoAdentro(unObjeto) {
+    objeto = unObjeto
+  }
+
+  method peso() {
+    return 400 + self.objetoAdentro().peso()
   }
 }
