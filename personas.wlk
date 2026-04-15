@@ -1,4 +1,6 @@
 import colores.*
+import materiales.*
+import objetos.*
 
 object rosa {
     method cosaQueLeGusta(cosa) {
@@ -12,7 +14,7 @@ object estefania {
     }
 }
 
-object Luisa {
+object luisa {
     method cosaQueLeGusta(cosa) {
         return cosa.material().esBrillante()
     }
